@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#list.active {
+    display: block;
+    transition: all 5s;
+    width: 100%;
+    color: white;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(120, 9, 121, 1) 97%);
+
+}
+
+.showForm {
+    display: block;
+}
+
+.hideForm {
+    display: none;
+}
+
+.border {
+    border-bottom: 5px solid orange;
+}
+
+.border-none {
+    border: none;
+}

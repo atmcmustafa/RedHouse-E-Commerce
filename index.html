@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/x-icon" href="images/icons8-us-dollar-circled-50.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body class="font-roboto">
+    <!-- navbar -->
+    <section class=" bg-gradient-to-t from-pink-300 to-red-200 h-screen">
+        <div class="container flex justify-between p-4 items-center">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div>
+                <div id="hamburgerButton"
+                    class="absolute right-20 top-12 z-10 block lg:hidden w-8 hover:cursor-pointer">
+                    <img src="images/menu.png">
+                </div>
+
+                <!-- mobile buttons -->
+                <div id="list" class="hidden absolute top-0 left-0 lg:hidden flex-col p-8">
+                    <ul class="flex flex-col gap-4 text-xl font-semibold font-openSans">
+                        <li><a href="index.html" class="hover:text-gray-600 duration-300">Home</a></li>
+                        <li><a href="products.html" class="hover:text-gray-600 duration-300">Products</a></li>
+                        <li><a href="details.html" class="hover:text-gray-600 duration-300">About</a></li>
+                        <li><a href="account.html" class="hover:text-gray-600 duration-300 ">Account</a></li>
+                        <li><a href="cart.html" class="hover:text-gray-600 duration-300">
+                                <img class="w-8" src="images/cart.png">
+                            </a></li>
+                    </ul>
+                </div>
+
+                <ul class="hidden lg:flex gap-6 text-xl font-semibold font-openSans">
+                    <li><a href="index.html" class="hover:text-gray-600 duration-300">Home</a></li>
+                    <li><a href="products.html" class="hover:text-gray-600 duration-300">Products</a></li>
+                    <li><a href="details.html" class="hover:text-gray-600 duration-300">About</a></li>
+                    <li><a href="account.html" class="hover:text-gray-600 duration-300 ">Account</a></li>
+                    <li><a href="cart.html" class="hover:text-gray-600 duration-300">
+                            <img class="w-8" src="images/cart.png">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- banner -->
+        <div class="container flex flex-col px-12 py-0 lg:px-0 lg:flex-row items-center gap-12 w-full lg:py-24">
+            <div class="w-1/2 ">
+                <img src="images/image1.png">
+            </div>
+            <div>
+                <h1 class="text-5xl text-center lg:text-start font-bold font-openSans">Give Your Workout A New Style!
+                </h1>
+                <p class="my-7 text-gray-800 text-lg text-center lg:text-start font-semibold">Lorem ipsum dolor sit amet
+                    consectetur adipisicing
+                    elit.
+                    Dolorem omnis
+                    obcaecati
+                    repellat praesentium
+                    neque quibusdam?</p>
+                <a href="products.html"
+                    class="flex lg:inline-block justify-center rounded-full bg-orange-600 text-lg text-gray-200 my-7 px-10 py-3 items-center">Explore
+                    Now
+                    <i class="fa-solid fa-arrow-right ml-3 text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- categories -->
+
+    <section class="my-24 ">
+        <div class="container flex gap-8 items-center justify-center w-1/3">
+            <img class="w-1/2" src="images/category-1.jpg">
+            <img class="w-1/2" src="images/category-2.jpg">
+            <img class="w-1/2" src="images/category-3.jpg">
+        </div>
+
+        <!-- products -->
+        <div class="mt-12 container items-center">
+            <h2 class="font-openSans text-4xl py-3 text-center font-bold"> Featured Products</h2>
+            <div class="border-t-4 border-orange-600 mx-auto w-1/4 "></div>
+
+            <div class="flex flex-col md:flex-row gap-8 items-center my-24 mx-auto">
+
+                <!-- item 1  -->
+                <div class="w-full md:p-0 p-12  ">
+                    <a href="details.html"><img src="images/product-1.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+                <!-- item 1  -->
+                <div class="w-full md:p-0 p-12 ">
+                    <a href="details.html"><img src="images/product-2.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+                <!-- item 2  -->
+                <div class="w-full md:p-0 p-12 ">
+                    <a href="details.html"><img src="images/product-3.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star "> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+                <!-- item 4  -->
+                <div class="w-full md:p-0 p-12 ">
+                    <a href="details.html"><img src="images/product-4.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+            </div>
+
+            <h2 class="font-openSans text-4xl py-3 text-center font-bold"> Latest Products</h2>
+            <div class="border-t-4 border-orange-600 mx-auto w-1/4 "></div>
+
+            <div class="flex flex-col lg:flex-row gap-8 items-center my-24 mx-auto">
+
+                <!-- item 1  -->
+                <div class="w-full md:p-0 p-12">
+                    <a href="details.html"><img src="images/product-5.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+                <!-- item 1  -->
+                <div class="w-full md:p-0 p-12 ">
+                    <a href="details.html"><img src="images/product-6.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+                <!-- item 2  -->
+                <div class="w-full md:p-0 p-12 ">
+                    <a href="details.html"><img src="images/product-7.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star "> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+                <!-- item 4  -->
+                <div class="w-full md:p-0 p-12">
+                    <a href="details.html"><img src="images/product-8.jpg"></a>
+                    <p class="text-gray-700 mt-4 text-lg">Red Printed T-Shirt</p>
+                    <!-- stars -->
+                    <div class="flex gap-1">
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star text-yellow-400"> </i>
+                        <i class="fas fa-star"> </i>
+                        <i class="fas fa-star"> </i>
+                    </div>
+                    <p class="text-gray-600 font-semibold mt-2">$50.00</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- smart band -->
+    <section class="w-full bg-gradient-to-t from-orange-300 to bg-orange-500">
+        <!-- banner -->
+        <div
+            class="container flex  flex-col lg:flex-row px-8 text-center lg:text-start lg:px-0 items-center gap-12 py-24">
+            <div class="w-1/2 ">
+                <a href="details.html"><img src="images/exclusive.png"></a>
+            </div>
+            <div>
+                <h1 class="text-5xl font-bold font-openSans">Smart Band 4 </h1>
+                <p class="my-7 text-gray-800 text-lg font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Dolorem omnis
+                    obcaecati
+                    repellat praesentium
+                    neque quibusdam?</p>
+                <a href="details.html"
+                    class="rounded-full bg-orange-600 text-lg text-gray-200 my-7 px-10 py-3 items-center">Buy
+                    Now
+                    <i class="fa-solid fa-arrow-right ml-3 text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- quotes -->
+    <section>
+        <!-- card 1 -->
+        <div class="container my-12 lg:my-24 flex flex-col lg:flex-row gap-4 p-12 lg:p-0">
+            <div
+                class="gap-6 shadow-2xl border w-full lg:w-1/3  mx-auto flex flex-col justify-center items-center p-8  flex-wrap">
+                <i class="fas fa-quote-left text-7xl text-orange-600"></i>
+                <p class="text-gray-500 mx-auto md:text-start text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Facere, eius
+                    qui.
+                    Porro sit eum praesentium
+                    quis enim recusandae, odit quod corporis ipsam rerum voluptatem voluptas minima inventore adipisci,
+                    repudiandae modi.</p>
+                <div class="flex gap-1">
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star"> </i>
+                </div>
+                <img src="images/user-1.png" class="rounded-full w-24">
+                <p class="text-2xl font-bold">Sean Parker</p>
+            </div>
+
+            <div
+                class="gap-6 shadow-2xl border w-full lg:w-1/3  mx-auto flex flex-col justify-center items-center p-8  flex-wrap">
+                <i class="fas fa-quote-left text-7xl text-orange-600"></i>
+                <p class="text-gray-500 mx-auto md:text-start text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Facere, eius
+                    qui.
+                    Porro sit eum praesentium
+                    quis enim recusandae, odit quod corporis ipsam rerum voluptatem voluptas minima inventore adipisci,
+                    repudiandae modi.</p>
+                <div class="flex gap-1">
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star"> </i>
+                </div>
+                <img src="images/user-2.png" class="rounded-full w-24">
+                <p class="text-2xl font-bold">Sean Parker</p>
+            </div>
+
+            <div
+                class="gap-6 shadow-2xl border w-full lg:w-1/3  mx-auto flex flex-col justify-center items-center p-8  flex-wrap">
+                <i class="fas fa-quote-left text-7xl text-orange-600"></i>
+                <p class="text-gray-500 mx-auto md:text-start text-center">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Facere, eius
+                    qui.
+                    Porro sit eum praesentium
+                    quis enim recusandae, odit quod corporis ipsam rerum voluptatem voluptas minima inventore adipisci,
+                    repudiandae modi.</p>
+                <div class="flex gap-1">
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star text-yellow-400"> </i>
+                    <i class="fas fa-star"> </i>
+                </div>
+                <img src="images/user-3.png" class="rounded-full w-24">
+                <p class="text-2xl font-bold">Sean Parker</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- sponsor -->
+
+    <div class="flex flex-col lg:flex-row container gap-8 items-center justify-center my-8">
+        <img src="images/logo-coca-cola.png">
+        <img src="images/logo-godrej.png">
+        <img src="images/logo-oppo.png">
+        <img src="images/logo-paypal.png">
+        <img src="images/logo-philips.png">
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-black text-gray-200  p-12">
+        <div class="container flex flex-col lg:flex-row lg:text-start text-center gap-12 items-center justify-center">
+            <div class="w-full lg:w-1/3">
+                <h5 class="text-3xl">Download Our App</h5>
+                <p class="my-4 text-gray-500">Download App for Android and ios mobile phone</p>
+                <div class="flex flex-col lg:flex-row gap-2  mx-auto w-1/3">
+
+                    <img class="cursor-pointer" src="images/play-store.png">
+                    <img class="cursor-pointer" src="images/app-store.png">
+                </div>
+            </div>
+            <div class="w-full lg:w-1/3">
+                <img class="mx-auto" src="images/logo-white.png">
+                <p class="my-4 text-gray-500 text-center ">Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit.
+                    Dicta,
+                    consectetur doloremque obcaecati id beatae sequi?</p>
+            </div>
+            <div class="w-full lg:w-1/3 flex items-center justify-center gap-16">
+
+                <ul class="text-center ">
+                    <h5 class="text-3xl mb-3 ">Useful Links</h5>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Coupons</li>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Blog Post</li>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Return Policy
+                    </li>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Join Affilate
+                    </li>
+                </ul>
+                <ul class="text-center ">
+                    <h5 class="text-3xl mb-3 ">Useful Links</h5>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Coupons</li>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Blog Post</li>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Return Policy
+                    </li>
+                    <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Join Affilate
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 mt-12">Copyright &copy; Mustafa Atmaca 2023</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+</body>
+
+
+
+</html>

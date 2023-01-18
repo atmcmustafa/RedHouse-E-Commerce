@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account </title>
+    <link rel="icon" type="image/x-icon" href="images/icons8-us-dollar-circled-50.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body class="font-roboto">
+    <!-- navbar -->
+    <section>
+        <div class="container flex justify-between p-4 items-center">
+            <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div>
+                <div id="hamburgerButton"
+                    class="absolute right-20 top-12 z-10 block lg:hidden w-8 hover:cursor-pointer">
+                    <img src="images/menu.png">
+                </div>
+
+                <!-- mobile buttons -->
+                <div id="list" class="hidden absolute top-0 left-0 lg:hidden flex-col p-8">
+                    <ul class="flex flex-col gap-4 text-xl font-semibold font-openSans">
+                        <li><a href="index.html" class="hover:text-gray-600 duration-300">Home</a></li>
+                        <li><a href="products.html" class="hover:text-gray-600 duration-300">Products</a></li>
+                        <li><a href="details.html" class="hover:text-gray-600 duration-300">About</a></li>
+                        <li><a href="account.html" class="hover:text-gray-600 duration-300 ">Account</a></li>
+                        <li><a href="cart.html" class="hover:text-gray-600 duration-300">
+                                <img class="w-8" src="images/cart.png">
+                            </a></li>
+                    </ul>
+                </div>
+
+                <ul class="hidden lg:flex gap-6 text-xl font-semibold font-openSans">
+                    <li><a href="index.html" class="hover:text-gray-600 duration-300">Home</a></li>
+                    <li><a href="products.html" class="hover:text-gray-600 duration-300">Products</a></li>
+                    <li><a href="details.html" class="hover:text-gray-600 duration-300">About</a></li>
+                    <li><a href="account.html" class="hover:text-gray-600 duration-300 ">Account</a></li>
+                    <li><a href="cart.html" class="hover:text-gray-600 duration-300">
+                            <img class="w-8" src="images/cart.png">
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- account -->
+
+        <section class="bg-gradient-to-t from-pink-300 to-red-200 h-screen">
+            <!-- banner -->
+            <div class="container flex flex-col px-12 py-0 lg:px-0 lg:flex-row items-center gap-12 w-full lg:py-24">
+                <div class="w-1/2 ">
+                    <img src="images/image1.png">
+                </div>
+
+                <!-- log inpage -->
+                <div class="p-8 w-full lg:w-1/3 shadow-lg border bg-gray-200">
+                    <div class="flex w-full">
+                        <a href="#" id="login" class="font-bold pb-2 w-1/2">Login</a>
+                        <a href="#" id="register" class="font-bold pb-2 w-1/2">Register</a>
+                    </div>
+
+                    <!-- login -->
+                    <div id="loginForm" class="hidden mt-8">
+                        <input class="w-full py-3 px-6 focus:outline-none" type="text" placeholder="Username">
+                        <input class="mt-6 w-full py-3 px-6 focus:outline-none mb-8" type="password"
+                            placeholder="Password">
+                        <a class="flex rounded-full justify-center py-3 text-white font-semibold bg-orange-600"
+                            href="#">Login</a>
+                        <a href="#" class="text-gray-500 flex mt-4 justify-center">Forgot Password?</a>
+                    </div>
+
+                    <!-- register -->
+
+                    <div id="registerForm" class="hidden mt-8">
+                        <input class="mt-6 w-full py-3 px-6 focus:outline-none mb-8" type="email" placeholder="Email">
+                        <input class="w-full py-3 px-6 focus:outline-none" type="text" placeholder="Username">
+                        <input class="mt-6 w-full py-3 px-6 focus:outline-none mb-8" type="password"
+                            placeholder="Password">
+                        <a class="flex rounded-full justify-center py-3 text-white font-semibold bg-orange-600"
+                            href="#">Register</a>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- footer -->
+        <footer class="bg-black text-gray-200  p-12">
+            <div
+                class="container flex flex-col lg:flex-row lg:text-start text-center gap-12 items-center justify-center">
+                <div class="w-full lg:w-1/3">
+                    <h5 class="text-3xl">Download Our App</h5>
+                    <p class="my-4 text-gray-500">Download App for Android and ios mobile phone</p>
+                    <div class="flex flex-col lg:flex-row gap-2  mx-auto w-1/3">
+
+                        <img class="cursor-pointer" src="images/play-store.png">
+                        <img class="cursor-pointer" src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/3">
+                    <img class="mx-auto" src="images/logo-white.png">
+                    <p class="my-4 text-gray-500 text-center ">Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit.
+                        Dicta,
+                        consectetur doloremque obcaecati id beatae sequi?</p>
+                </div>
+                <div class="w-full lg:w-1/3 flex items-center justify-center gap-16">
+
+                    <ul class="text-center ">
+                        <h5 class="text-3xl mb-3 ">Useful Links</h5>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Coupons</li>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Blog Post</li>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Return Policy
+                        </li>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Join Affilate
+                        </li>
+                    </ul>
+                    <ul class="text-center ">
+                        <h5 class="text-3xl mb-3 ">Useful Links</h5>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Coupons</li>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Blog Post</li>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Return Policy
+                        </li>
+                        <li class="text-gray-500 hover:text-gray-300 duration-300 hover:cursor-pointer">Join Affilate
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center text-gray-500 mt-12">Copyright &copy; Mustafa Atmaca 2023</p>
+        </footer>
+        <script src="app.js"></script>
+
+</body>
+
+</html>
